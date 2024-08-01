@@ -1,0 +1,4 @@
+0 BerjerawatLevel1
+1 BerjerawatLevel2
+2 BerjerawatLevel3
+3 Tidakberjerawat
