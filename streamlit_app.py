@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
 
 # Tentukan path model yang sudah dilatih
-model_path = 'C:\\Users\\User\\keras_model.h5'  # Ganti dengan path model yang sesuai
+model_path = 'keras_model.h5'  # Ganti dengan path model yang sesuai
 model = load_model(model_path)
 
 # Tentukan ukuran gambar dan nama kelas
@@ -67,7 +67,7 @@ if page == "Home":
     
     with col1:
         st.markdown("<p class='black-text' style='text-align:center; font-size: 18px; font-weight: bold;'>Tidak Berjerawat</p>", unsafe_allow_html=True)
-        image_no_acne = Image.open("c:\\Users\\User\\app_acne\\image\\120.jpg")  # Ganti dengan path gambar yang sesuai
+        image_no_acne = Image.open("image/120.jpg")  # Ganti dengan path gambar yang sesuai
         resized_image_no_acne = image_no_acne.resize((300, 300))  # Mengubah ukuran gambar
         st.image(resized_image_no_acne, caption="Contoh wajah tanpa acne", use_column_width=True)
         st.markdown("""
@@ -79,7 +79,7 @@ if page == "Home":
 
     with col3:
         st.markdown("<p class='black-text' style='text-align:center; font-size: 18px; font-weight: bold;'>Jerawat Level 1</p>", unsafe_allow_html=True)
-        image_with_acne1 = Image.open("c:\\Users\\User\\app_acne\\image\\levle1_7.jpg")  # Ganti dengan path gambar yang sesuai
+        image_with_acne1 = Image.open("image/levle1_7.jpg")  # Ganti dengan path gambar yang sesuai
         resized_image_with_acne1 = image_with_acne1.resize((300, 300))  # Mengubah ukuran gambar
         st.image(resized_image_with_acne1, caption="Contoh wajah dengan acne level 1", use_column_width=True)
         st.markdown("""
@@ -96,7 +96,7 @@ if page == "Home":
     
     with col3:
         st.markdown("<p class='black-text' style='text-align:center; font-size: 18px; font-weight: bold;'>Jerawat Level 2</p>", unsafe_allow_html=True)
-        image_with_acne2 = Image.open("c:\\Users\\User\\app_acne\\image\\levle2_7.jpg")  # Ganti dengan path gambar yang sesuai
+        image_with_acne2 = Image.open("image/levle2_7.jpg")  # Ganti dengan path gambar yang sesuai
         resized_image_with_acne2 = image_with_acne2.resize((300, 300))  # Mengubah ukuran gambar
         st.image(resized_image_with_acne2, caption="Contoh wajah dengan acne level 2", use_column_width=True)
         st.markdown("""
@@ -108,7 +108,7 @@ if page == "Home":
 
     with col4:
         st.markdown("<p class='black-text' style='text-align:center; font-size: 18px; font-weight: bold;'>Jerawat Level 3</p>", unsafe_allow_html=True)
-        image_with_acne3 = Image.open("c:\\Users\\User\\app_acne\\image\\levle3_0.jpg")  # Ganti dengan path gambar yang sesuai
+        image_with_acne3 = Image.open("image/levle3_0.jpg")  # Ganti dengan path gambar yang sesuai
         resized_image_with_acne3 = image_with_acne3.resize((300, 300))  # Mengubah ukuran gambar
         st.image(resized_image_with_acne3, caption="Contoh wajah dengan acne level 3", use_column_width=True)
         st.markdown("""
